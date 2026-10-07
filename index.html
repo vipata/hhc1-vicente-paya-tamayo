@@ -3,9 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Recetas &amp; Fogones — Inicio</title>
+    <link rel="stylesheet" href="/scss/main.scss" />
   </head>
   <body>
-    <h1>Hola mundo</h1>
+    <include src="partials/header.html"></include>
+
+    <main id="contenido-principal" class="container">
+      <section class="hero">
+        <img
+          class="hero__image"
+          src="/img/restaurante.jpg"
+          alt="Mesa con varios varios comensales y diversos tipos de platos de comida, con un fondo desenfocado"
+          width="800"
+          height="450"
+        />
+        <div class="hero__text">
+          <h1>Recetas &amp; Fogones</h1>
+          <p>
+            Bienvenidos y bienvenidas a <strong>Recetas &amp; Fogones</strong>, un recetario con platos de la
+            gastronomía tradicional explicados paso a paso, pensado para cocineras y cocineros de cualquier nivel.
+          </p>
+          <p>
+            Explora nuestra <a href="/categoria">listado de platos</a> para descubrir todas las recetas disponibles, con
+            imágenes y una breve descripción de cada una.
+          </p>
+        </div>
+      </section>
+
+      <section class="home-highlights" aria-labelledby="destacados-titulo">
+        <h2 id="destacados-titulo">Platos destacados</h2>
+        <ul class="cards-grid">
+          <li class="card">
+            <img
+              class="card__image"
+              src="/img/paella.jpg"
+              alt="Paella de marisco servida en su paellera, con arroz, cigalas, mejillones y almejas"
+              width="400"
+              height="300"
+            />
+            <h2 class="card__title">Paella de marisco</h2>
+            <p class="card__desc">
+              Arroz cocinado a fuego lento con cigalas, mejillones y almejas, uno de los platos más representativos de
+              la cocina de la comunidad valenciana.
+            </p>
+            <a class="card__link" href="/det1"
+              >Ver receta completa de la paella de marisco<i
+                class="fa-solid fa-arrow-right card__icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+
+          <li class="card">
+            <img
+              class="card__image"
+              src="/img/tortilla.jpg"
+              alt="Tortilla de patatas sobre un plato con fondo negro"
+              width="400"
+              height="300"
+            />
+            <h2 class="card__title">Tortilla de patatas</h2>
+            <p class="card__desc">
+              Receta clásica de la cocina española a base de huevo, patata y cebolla, cuajada lentamente para conseguir
+              un interior jugoso.
+            </p>
+            <a class="card__link" href="/det2"
+              >Ver receta completa de la tortilla de patatas<i
+                class="fa-solid fa-arrow-right card__icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+
+          <li class="card">
+            <img
+              class="card__image"
+              src="/img/salmorejo.jpg"
+              alt="Salmorejo cordobés servido en un cuenco, con pepino y decorado con hierba buena"
+              width="400"
+              height="300"
+            />
+            <h2 class="card__title">Salmorejo cordobés</h2>
+            <p class="card__desc">
+              Sopa fría de tomate, pepino, pimiento y pan, típica del sur de España, ideal para los meses de más calor.
+            </p>
+            <!-- Enlace no implementado porque la página no está desarrollada -->
+            <a class="card__link" href="#"
+              >Ver receta completa del salmorejo cordobés<i
+                class="fa-solid fa-arrow-right card__icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <include src="partials/footer.html"></include>
   </body>
 </html>

@@ -1,0 +1,54 @@
+@use 'variables' as *;
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-block: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  flex: 1 1 16rem;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-bg-alt;
+  border: 1px solid $color-border;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+
+  // Resalta toda la tarjeta cuando el foco/hover está en su enlace
+  &:has(.card__link:hover),
+  &:has(.card__link:focus-visible) {
+    border-color: $color-primary;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 15%);
+    transform: translateY(-0.2rem);
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin: 0.75rem 1rem 0.25rem;
+    font-size: 1.15rem;
+  }
+
+  &__desc {
+    margin: 0 1rem 0.75rem;
+    flex-grow: 1;
+  }
+
+  &__link {
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+}

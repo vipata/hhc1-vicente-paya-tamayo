@@ -1,0 +1,19 @@
+// Paleta pensada para cumplir el contraste mínimo AA (WCAG 2.0) sobre fondo claro
+$color-bg: #fffaf3;
+$color-bg-alt: #ffffff;
+$color-text: #2b2114;
+$color-primary: #a0410f; // contraste ~6.4:1 sobre blanco
+$color-primary-dark: #5c2608;
+$color-accent: #3c6e47;
+$color-border: #d8c9b3;
+$color-focus: #1a4fa0;
+
+$font-base: 'Segoe UI', Verdana, Arial, sans-serif;
+$font-heading: Georgia, 'Times New Roman', serif;
+
+$breakpoint-sm: 36rem;
+$breakpoint-md: 48rem;
+$breakpoint-lg: 64rem;
+
+$container-max: 75rem;
+$spacing-unit: 1rem;

@@ -1,0 +1,40 @@
+@use 'variables' as *;
+
+.site-header {
+  background-color: $color-bg-alt;
+  border-bottom: 1px solid $color-border;
+  padding-block: 0.75rem;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  &__brand {
+    margin: 0;
+    font-family: $font-heading;
+    font-size: 2rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__accent {
+    color: $color-accent;
+  }
+}
+
+.main-nav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
