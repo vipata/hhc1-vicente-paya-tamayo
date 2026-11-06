@@ -12,12 +12,21 @@
     <main id="contenido-principal" class="container">
       <article>
         <h1>Tortilla de patatas</h1>
+
         <img
           class="detail__hero"
-          src="/img/tortilla.jpg"
+          src="/img/tortilla.jpg?as=webp&width=800"
+          srcset="
+            /img/tortilla.jpg?as=webp&width=400   400w,
+            /img/tortilla.jpg?as=webp&width=800   800w,
+            /img/tortilla.jpg?as=webp&width=1200 1200w,
+            /img/tortilla.jpg?as=webp&width=1600 1600w
+          "
+          sizes="(min-width: 75rem) 73rem, calc(100vw - 2rem)"
           alt="Tortilla de patatas entera recién hecha, lista para cortar en porciones"
           width="800"
           height="450"
+          loading="eager"
         />
 
         <p>
@@ -42,22 +51,40 @@
         <h2>Imágenes del proceso</h2>
         <div class="detail__gallery">
           <img
-            src="/img/tortilla-ingredientes.jfif"
+            src="/img/tortilla-ingredientes.jpg?as=webp&width=300&height=225"
+            srcset="
+              /img/tortilla-ingredientes.jpg?as=webp&width=300&height=225 1x,
+              /img/tortilla-ingredientes.jpg?as=webp&width=600&height=450 2x,
+              /img/tortilla-ingredientes.jpg?as=webp&width=900&height=675 3x
+            "
             alt="Patatas y cebolla cortadas en trozos antes de freír"
             width="400"
             height="300"
+            loading="lazy"
           />
           <img
-            src="/img/tortilla-coccion.jfif"
+            src="/img/tortilla-coccion.jpg?as=webp&width=300&height=225"
+            srcset="
+              /img/tortilla-coccion.jpg?as=webp&width=300&height=225 1x,
+              /img/tortilla-coccion.jpg?as=webp&width=600&height=450 2x,
+              /img/tortilla-coccion.jpg?as=webp&width=900&height=675 3x
+            "
             alt="Tortilla cuajando lentamente en la sartén"
             width="400"
             height="300"
+            loading="lazy"
           />
           <img
-            src="/img/tortilla-porcion.jpg"
+            src="/img/tortilla-porcion.jpg?as=webp&width=300&height=225"
+            srcset="
+              /img/tortilla-porcion.jpg?as=webp&width=300&height=225 1x,
+              /img/tortilla-porcion.jpg?as=webp&width=600&height=450 2x,
+              /img/tortilla-porcion.jpg?as=webp&width=900&height=675 3x
+            "
             alt="Porción de tortilla de patatas servida en un plato, mostrando su interior jugoso"
             width="400"
             height="300"
+            loading="lazy"
           />
         </div>
 

@@ -7,8 +7,12 @@
   gap: 1.5rem;
   margin-block: 1.5rem;
 
-  &__image {
+  picture {
     flex: 1 1 18rem;
+  }
+
+  &__image {
+    width: 100%;
     border-radius: 0.5rem;
   }
 

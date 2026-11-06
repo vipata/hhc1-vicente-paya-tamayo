@@ -11,13 +11,22 @@
 
     <main id="contenido-principal" class="container">
       <section class="hero">
-        <img
-          class="hero__image"
-          src="/img/restaurante.jpg"
-          alt="Mesa con varios varios comensales y diversos tipos de platos de comida, con un fondo desenfocado"
-          width="800"
-          height="450"
-        />
+        <picture>
+          <source
+            media="(min-width: 48rem)"
+            srcset="/img/restaurante-desktop-800.webp 800w, /img/restaurante-desktop-1200.webp 1200w"
+            sizes="33vw"
+          />
+          <source srcset="/img/restaurante-mobile-480.webp 480w, /img/restaurante-mobile-800.webp 800w" sizes="100vw" />
+          <img
+            class="hero__image"
+            src="/img/restaurante-mobile-800.webp"
+            alt="Mesa con varios varios comensales y diversos tipos de platos de comida, con un fondo desenfocado"
+            width="800"
+            height="800"
+            loading="eager"
+          />
+        </picture>
         <div class="hero__text">
           <h1>Recetas &amp; Fogones</h1>
           <p>
@@ -37,10 +46,17 @@
           <li class="card">
             <img
               class="card__image"
-              src="/img/paella.jpg"
+              src="/img/paella.jpg?as=webp&width=400"
+              srcset="
+                /img/paella.jpg?as=webp&width=400   400w,
+                /img/paella.jpg?as=webp&width=800   800w,
+                /img/paella.jpg?as=webp&width=1200 1200w
+              "
+              sizes="(max-width: 36rem) 100vw, (max-width: 48rem) 50vw, (max-width: 64rem) 33vw, 25vw"
               alt="Paella de marisco servida en su paellera, con arroz, cigalas, mejillones y almejas"
               width="400"
               height="300"
+              loading="lazy"
             />
             <h2 class="card__title">Paella de marisco</h2>
             <p class="card__desc">
@@ -58,10 +74,17 @@
           <li class="card">
             <img
               class="card__image"
-              src="/img/tortilla.jpg"
+              src="/img/tortilla.jpg?as=webp&width=400"
+              srcset="
+                /img/tortilla.jpg?as=webp&width=400   400w,
+                /img/tortilla.jpg?as=webp&width=800   800w,
+                /img/tortilla.jpg?as=webp&width=1200 1200w
+              "
+              sizes="(max-width: 36rem) 100vw, (max-width: 48rem) 50vw, (max-width: 64rem) 33vw, 25vw"
               alt="Tortilla de patatas sobre un plato con fondo negro"
               width="400"
               height="300"
+              loading="lazy"
             />
             <h2 class="card__title">Tortilla de patatas</h2>
             <p class="card__desc">
@@ -79,10 +102,17 @@
           <li class="card">
             <img
               class="card__image"
-              src="/img/salmorejo.jpg"
+              src="/img/salmorejo.jpg?as=webp&width=400"
+              srcset="
+                /img/salmorejo.jpg?as=webp&width=400   400w,
+                /img/salmorejo.jpg?as=webp&width=800   800w,
+                /img/salmorejo.jpg?as=webp&width=1200 1200w
+              "
+              sizes="(max-width: 36rem) 100vw, (max-width: 48rem) 50vw, (max-width: 64rem) 33vw, 25vw"
               alt="Salmorejo cordobés servido en un cuenco, con pepino y decorado con hierba buena"
               width="400"
               height="300"
+              loading="lazy"
             />
             <h2 class="card__title">Salmorejo cordobés</h2>
             <p class="card__desc">

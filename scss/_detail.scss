@@ -15,6 +15,9 @@
 
     img {
       flex: 1 1 12rem;
+      max-width: 18rem;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
     }
   }
 }

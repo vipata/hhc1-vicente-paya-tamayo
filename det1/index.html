@@ -14,10 +14,18 @@
         <h1>Paella de marisco</h1>
         <img
           class="detail__hero"
-          src="/img/paella.jpg"
+          src="/img/paella.jpg?as=webp&width=800"
+          srcset="
+            /img/paella.jpg?as=webp&width=400   400w,
+            /img/paella.jpg?as=webp&width=800   800w,
+            /img/paella.jpg?as=webp&width=1200 1200w,
+            /img/paella.jpg?as=webp&width=1600 1600w
+          "
+          sizes="(min-width: 75rem) 73rem, calc(100vw - 2rem)"
           alt="Paella de marisco recién hecha en su paellera tradicional, con arroz, cigalas, mejillones y almejas"
           width="800"
           height="450"
+          loading="eager"
         />
 
         <p>
@@ -42,22 +50,40 @@
         <h2>Imágenes del proceso</h2>
         <div class="detail__gallery">
           <img
-            src="/img/paella-sofrito.jfif"
+            src="/img/paella-sofrito.jpg?as=webp&width=300&height=225"
+            srcset="
+              /img/paella-sofrito.jpg?as=webp&width=300&height=225 1x,
+              /img/paella-sofrito.jpg?as=webp&width=600&height=450 2x,
+              /img/paella-sofrito.jpg?as=webp&width=900&height=675 3x
+            "
             alt="Sofrito de tomate, ñora, pan tostado y sal antes de añadir el arroz"
             width="400"
             height="300"
+            loading="lazy"
           />
           <img
-            src="/img/paella-caldo.jfif"
+            src="/img/paella-caldo.jpg?as=webp&width=300&height=225"
+            srcset="
+              /img/paella-caldo.jpg?as=webp&width=300&height=225 1x,
+              /img/paella-caldo.jpg?as=webp&width=600&height=450 2x,
+              /img/paella-caldo.jpg?as=webp&width=900&height=675 3x
+            "
             alt="Arroz repartido de manera uniforme en la paellera junto con el caldo"
             width="400"
             height="300"
+            loading="lazy"
           />
           <img
-            src="/img/paella-coccion.jfif"
+            src="/img/paella-coccion.jpg?as=webp&width=300&height=225"
+            srcset="
+              /img/paella-coccion.jpg?as=webp&width=300&height=225 1x,
+              /img/paella-coccion.jpg?as=webp&width=600&height=450 2x,
+              /img/paella-coccion.jpg?as=webp&width=900&height=675 3x
+            "
             alt="Paella durante el proceso de cocción, con el arroz absorbiendo el caldo y los mariscos encima"
             width="400"
             height="300"
+            loading="lazy"
           />
         </div>
 
