@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'variables' as *;
 
 .hero {
@@ -18,5 +19,49 @@
 
   &__text {
     flex: 2 1 20rem;
+  }
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.citrus-spinner {
+  animation: citrus-spin 12s linear infinite;
+  transform-origin: center;
+
+  &__rind {
+    fill: $color-primary;
+  }
+
+  &__flesh {
+    fill: color.scale($color-primary, $lightness: 45%);
+  }
+
+  &__segments line {
+    stroke: $color-primary;
+    stroke-width: 2;
+    opacity: 0.6;
+  }
+
+  &__center {
+    fill: $color-bg-alt;
+  }
+}
+
+@keyframes citrus-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .citrus-spinner {
+    animation: none;
   }
 }
