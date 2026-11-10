@@ -22,7 +22,6 @@
     transform 0.2s ease,
     border-color 0.2s ease;
 
-  // Resalta toda la tarjeta cuando el foco/hover está en su enlace
   &:has(.card__link:hover),
   &:has(.card__link:focus-visible) {
     border-color: $color-primary;

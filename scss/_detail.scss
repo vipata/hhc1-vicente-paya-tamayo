@@ -3,7 +3,7 @@
 .detail {
   &__hero {
     width: 100%;
-    border-radius: 0.5rem;
+    clip-path: url(#pan-clip);
     margin-block-end: 1rem;
   }
 
